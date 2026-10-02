@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0clip - Privacy Policy / Politique de confidentialite</title>
+<meta name="description" content="Privacy policy of 0clip, a personal local tool that uses YouTube API Services. Politique de confidentialite de 0clip.">
+<style>
+  :root { color-scheme: light dark; --fg: #18181b; --muted: #5f5f6b; --line: #e4e4e8; --bg: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f4f4f5; --muted: #a1a1aa; --line: #2e2e33; --bg: #0c0c0e; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  h3 { font-size: 1rem; margin: 1.25rem 0 .25rem; }
+  p, li { margin: .4rem 0; }
+  ul { padding-left: 1.25rem; }
+  a { color: inherit; }
+  nav { font-size: .9rem; color: var(--muted); margin-bottom: 1.5rem; }
+  nav a { margin-right: 1rem; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+  code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="#fr">Version francaise</a></nav>
+
+<h1>0clip - Privacy Policy</h1>
+<p class="meta">Last updated: 2 October 2026. Contact: hillelcohen07@gmail.com</p>
+
+<h2>What 0clip is</h2>
+<p>0clip is a personal, local tool that turns long videos into short vertical clips (cutting, cropping, subtitles, titles) and publishes them to the owner's own YouTube channel. It runs on a single computer, has a single user (its developer and owner), is not distributed, not sold and not hosted online. There is no account system and no third-party user data.</p>
+
+<h2>YouTube API Services</h2>
+<p>0clip uses YouTube API Services (YouTube Data API v3 and YouTube Analytics API). By using 0clip, the user agrees to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Data accessed through YouTube API Services, and why</h2>
+<ul>
+  <li><strong>Google sign-in (OAuth 2.0)</strong> with the scopes <code>youtube.upload</code>, <code>youtube.readonly</code> and <code>yt-analytics.readonly</code>: to upload the user's own videos, to display the name of the connected channel, and to read the statistics of the user's own channel.</li>
+  <li><strong>Video upload and metadata</strong> (title, description, tags, category, language, privacy status, scheduled publish time, thumbnail): sent to YouTube on the user's explicit request, for the user's own channel only.</li>
+  <li><strong>Public search</strong> (search.list, videos.list, channels.list): to display public videos matching the user's search (title, channel, thumbnail, view count, publish date, duration, declared language, subscriber count). Results are displayed as returned by the API, without modification, scoring or derived metrics, and each result links to YouTube.</li>
+  <li><strong>Channel statistics</strong> (YouTube Analytics API, <code>reports.query</code>): official metrics of the user's own published videos (views, watch time, average view duration and percentage, likes, comments, shares, subscribers gained), displayed as returned.</li>
+</ul>
+<p>0clip does not download, store or cache YouTube audiovisual content. It only processes video files that the user owns and provides (local files, or files from the user's own cloud storage).</p>
+
+<h2>Storage and security</h2>
+<ul>
+  <li>All data stays on the user's computer, in a local <code>data/</code> folder. Nothing is sent to a server operated by 0clip (there is none).</li>
+  <li>The OAuth refresh token is stored encrypted (AES-256-GCM) with a key kept outside the data folder. Access tokens are kept in memory only. Tokens are never written to logs.</li>
+  <li>Transport to Google uses HTTPS only.</li>
+</ul>
+
+<h2>Retention</h2>
+<ul>
+  <li>Authorization tokens: kept as long as the user stays connected; deleted on disconnection (the token is also revoked with Google).</li>
+  <li>Public search results and "spotted" videos (video ID, title, channel, thumbnail URL, view count, publish date, duration): refreshed from the API or deleted after 30 days at the latest. The user's own free-text notes are not YouTube data.</li>
+  <li>Upload metadata and video IDs of the user's own published videos: kept with the local project as the user's own records.</li>
+  <li>Channel statistics (Analytics data): may be kept locally; they are re-read from the API on each visit and are only shown while the user's authorization is valid.</li>
+</ul>
+
+<h2>Sharing with third parties</h2>
+<p>To choose the best moments and write titles, descriptions and hashtags, 0clip sends the transcription of the user's own video and the user's own clip metadata to Anthropic (Claude), under Anthropic's terms. 0clip does not send YouTube API data (search results, other channels' data, channel statistics) to Anthropic or to any other third party. No cookies and no analytics or advertising services are used.</p>
+
+<h2>Revocation and deletion</h2>
+<ul>
+  <li>The user can disconnect YouTube from 0clip at any time ("Disconnect" in the header): the token is revoked and deleted.</li>
+  <li>Access can also be revoked from the Google account security settings: <a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>. 0clip deletes stored authorized data within 7 days of a revocation.</li>
+  <li>Any locally stored data can be deleted by deleting the <code>data/</code> folder.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>hillelcohen07@gmail.com</p>
+
+<hr>
+
+<section id="fr" lang="fr">
+<h1>0clip - Politique de confidentialite</h1>
+<p class="meta">Derniere mise a jour : 2 octobre 2026. Contact : hillelcohen07@gmail.com</p>
+
+<h2>Ce qu'est 0clip</h2>
+<p>0clip est un outil personnel et local qui transforme des videos longues en clips verticaux courts (decoupe, recadrage, sous-titres, titres) et les publie sur la chaine YouTube de son proprietaire. Il tourne sur un seul ordinateur, a un seul utilisateur (son developpeur et proprietaire), n'est ni distribue, ni vendu, ni heberge en ligne. Il n'y a pas de comptes ni de donnees d'utilisateurs tiers.</p>
+
+<h2>YouTube API Services</h2>
+<p>0clip utilise les YouTube API Services (YouTube Data API v3 et YouTube Analytics API). En utilisant 0clip, l'utilisateur accepte d'etre lie par les <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a>. Le traitement des donnees par Google est decrit dans les <a href="https://policies.google.com/privacy">Regles de confidentialite de Google</a>.</p>
+
+<h2>Donnees lues via les YouTube API Services, et pourquoi</h2>
+<ul>
+  <li><strong>Connexion Google (OAuth 2.0)</strong> avec les acces <code>youtube.upload</code>, <code>youtube.readonly</code> et <code>yt-analytics.readonly</code> : envoyer les propres videos de l'utilisateur, afficher le nom de la chaine connectee, lire les statistiques de sa propre chaine.</li>
+  <li><strong>Envoi de videos et metadonnees</strong> (titre, description, tags, categorie, langue, visibilite, date de publication programmee, miniature) : envoyes a YouTube a la demande explicite de l'utilisateur, sur sa seule chaine.</li>
+  <li><strong>Recherche publique</strong> (search.list, videos.list, channels.list) : afficher les videos publiques correspondant a la recherche de l'utilisateur (titre, chaine, miniature, vues, date, duree, langue declaree, abonnes). Les resultats sont affiches tels que renvoyes par l'API, sans modification, sans score ni donnee derivee, et chaque resultat renvoie vers YouTube.</li>
+  <li><strong>Statistiques de la chaine</strong> (YouTube Analytics API, <code>reports.query</code>) : metriques officielles des propres videos publiees de l'utilisateur (vues, minutes vues, duree et pourcentage moyens de visionnage, j'aime, commentaires, partages, abonnes gagnes), affichees telles quelles.</li>
+</ul>
+<p>0clip ne telecharge, ne stocke et ne met en cache aucun contenu audiovisuel YouTube. Il ne traite que des fichiers video qui appartiennent a l'utilisateur et qu'il fournit lui-meme (fichiers locaux ou issus de son propre stockage en ligne).</p>
+
+<h2>Stockage et securite</h2>
+<ul>
+  <li>Toutes les donnees restent sur l'ordinateur de l'utilisateur, dans un dossier local <code>data/</code>. Rien n'est envoye a un serveur exploite par 0clip (il n'y en a pas).</li>
+  <li>Le jeton de rafraichissement OAuth est stocke chiffre (AES-256-GCM) avec une cle conservee hors du dossier de donnees. Les jetons d'acces restent en memoire. Aucun jeton n'est ecrit dans les journaux.</li>
+  <li>Les echanges avec Google se font uniquement en HTTPS.</li>
+</ul>
+
+<h2>Durees de conservation</h2>
+<ul>
+  <li>Jetons d'autorisation : conserves tant que l'utilisateur reste connecte ; supprimes a la deconnexion (le jeton est aussi revoque aupres de Google).</li>
+  <li>Resultats de recherche publique et videos « reperees » (identifiant, titre, chaine, URL de miniature, vues, date, duree) : rafraichis depuis l'API ou supprimes au plus tard apres 30 jours. Les notes libres de l'utilisateur ne sont pas des donnees YouTube.</li>
+  <li>Metadonnees d'envoi et identifiants des propres videos publiees de l'utilisateur : conserves avec le projet local, comme ses propres archives.</li>
+  <li>Statistiques de la chaine (donnees Analytics) : peuvent etre conservees localement ; elles sont relues depuis l'API a chaque visite et affichees seulement tant que l'autorisation de l'utilisateur est valide.</li>
+</ul>
+
+<h2>Partage avec des tiers</h2>
+<p>Pour choisir les meilleurs moments et ecrire titres, descriptions et hashtags, 0clip envoie la transcription de la propre video de l'utilisateur et ses propres metadonnees de clips a Anthropic (Claude), selon les conditions d'Anthropic. 0clip n'envoie aucune donnee des YouTube API Services (resultats de recherche, donnees d'autres chaines, statistiques de chaine) a Anthropic ni a aucun autre tiers. Aucun cookie, aucun service de mesure d'audience ou de publicite.</p>
+
+<h2>Revocation et suppression</h2>
+<ul>
+  <li>L'utilisateur peut deconnecter YouTube de 0clip a tout moment (« Deconnecter » dans l'en-tete) : le jeton est revoque et supprime.</li>
+  <li>L'acces peut aussi etre retire depuis les parametres de securite du compte Google : <a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>. 0clip supprime les donnees autorisees stockees dans les 7 jours suivant une revocation.</li>
+  <li>Toute donnee stockee localement peut etre supprimee en effacant le dossier <code>data/</code>.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>hillelcohen07@gmail.com</p>
+</section>
+</main>
+</body>
+</html>
