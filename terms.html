@@ -20,6 +20,11 @@
   nav a { margin-right: 1rem; }
   .meta { color: var(--muted); font-size: .9rem; }
   hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+  footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1rem; font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
+  footer a img { display: block; height: 56px; width: auto; }
+  footer .brand { margin-left: auto; }
+  @media (prefers-color-scheme: dark) { .logo-dark { display: none; } }
+  @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) { .logo-light { display: none; } }
 </style>
 </head>
 <body>
@@ -91,6 +96,13 @@
 <h2>Contact</h2>
 <p>hillelcohen07@gmail.com</p>
 </section>
+<footer>
+  <span>0clip uses YouTube API Services. / 0clip utilise les YouTube API Services.</span>
+  <a href="index.html">Privacy Policy / Politique de confidentialite</a>
+  <a href="terms.html">Terms of Service / Conditions d'utilisation</a>
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service / Conditions d'utilisation de YouTube</a>
+  <a class="brand" href="https://www.youtube.com/" title="Developed with YouTube"><img class="logo-dark" src="developed-with-youtube-dark.png" alt="Developed with YouTube" width="700" height="250"><img class="logo-light" src="developed-with-youtube-light.png" alt="Developed with YouTube" width="700" height="250"></a>
+</footer>
 </main>
 </body>
 </html>
